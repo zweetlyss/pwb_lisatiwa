@@ -56,3 +56,20 @@ $route['translate_uri_dashes'] = FALSE;
 $route['admin'] = 'administrator/Admin_dashboard_controller/index';
 $route['admin/login'] = 'administrator/admin_auth_controller/index';
 $route['admin/logout'] = 'administrator/admin_auth_controller/logout' ;
+
+#admin kategori
+$route['admin/kategori'] = 'administrator/kategori_controller/index';
+$route['admin/kategori/tambah']        = 'administrator/kategori_controller/tambah_kategori';
+$route['admin/kategori/hapus/(:num)']  = 'administrator/kategori_controller/hapus_kategori/$1';
+$route['admin/kategori/ubah/(:num)']   = 'administrator/kategori_controller/ubah_kategori/$1';
+
+// Route Master Produk
+$route['admin/produk']                      = 'administrator/produk_controller/index';
+$route['admin/produk/tambah']               = 'administrator/produk_controller/tambah_produk';
+$route['admin/produk/ubah/(:num)']          = 'administrator/produk_controller/ubah_produk/$1';
+$route['admin/produk/hapus/(:num)']         = 'administrator/produk_controller/hapus_produk/$1';
+
+// Route Produk Gambar
+$route['admin/produk/gambar/(:num)']        = 'administrator/produk_controller/gambar_produk/$1';
+$route['admin/produk/gambar/hapus/(:num)']  = 'administrator/produk_controller/hapus_gambar_produk/$1';
+$route['admin/produk/gambar/ubah/(:num)']   = 'administrator/produk_controller/ubah_gambar_produk/$1';
